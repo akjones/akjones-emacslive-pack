@@ -1,3 +1,3 @@
-(live-pack-name "user-template-pack")
-(live-pack-version "0.0.1alpha")
-(live-pack-description "Your own user pack - modify and customise this to your hearts content.")
+(live-pack-name "akjones-pack")
+(live-pack-version "1.0.0alpha")
+(live-pack-description "Stuff goes in here")

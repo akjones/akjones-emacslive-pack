@@ -1,0 +1,10 @@
+(defun make-it-go ()
+  (setq exec-path (cons "/usr/local/bin/go" exec-path))
+  (add-to-list 'exec-path "/Users/akjones/projects/bin/bin")
+  (setq gofmt-command "goimports")
+  (add-hook 'before-save-hook 'gofmt-before-save)
+  (if (not (string-match "go" compile-command))
+      (set (make-local-variable 'compile-command)
+           "go build -v && go test -v && go vet")))
+
+(add-hook 'go-mode-hook 'make-it-go)
