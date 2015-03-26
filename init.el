@@ -70,3 +70,7 @@
     (setq exec-path (split-string path-from-shell path-separator))))
 
 (if window-system (set-exec-path-from-shell-PATH))
+
+(autoload 'extempore-mode "/usr/local/Cellar/extempore/0.59/extras/extempore.el" "" t)
+(add-to-list 'auto-mode-alist '("\\.xtm$" . extempore-mode))
+(setq user-extempore-directory "/usr/local/Cellar/extempore/0.59")
